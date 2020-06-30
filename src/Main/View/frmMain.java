@@ -73,9 +73,6 @@ public class frmMain extends javax.swing.JFrame {
     public void setjMenuBar1(JMenuBar jMenuBar1) {
         this.jMenuBar1 = jMenuBar1;
     }
-
-   
-
   
     public JMenuItem getjMenuItem5() {
         return jMenuItem5;

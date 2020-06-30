@@ -209,7 +209,7 @@ public class pnlCustomer extends javax.swing.JPanel {
 
         tblCustomer.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"KH001", "Trịnh Thị Ngọc Ánh", "0329271555", "Hà Nội", "DH001", "Đã thanh toán"},
+                {"KH001", "Trịnh Thị Ngọc  Ánh", "0329271555", "Hà Nội", "DH001", "Đã thanh toán"},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
@@ -245,7 +245,6 @@ public class pnlCustomer extends javax.swing.JPanel {
                 "Tháng", "Chỉ số đồng hồ", "Số KWH", "Ngày ghi", "Trạng thái"
             }
         ));
-        tblClockDetail.setToolTipText("");
         jScrollPane2.setViewportView(tblClockDetail);
 
         jTextField1.setToolTipText("Nhập mã hoặc tên khách hàng");

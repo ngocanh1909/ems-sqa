@@ -47,11 +47,6 @@ public class pnlInvoice extends javax.swing.JPanel {
         tblAddInvoice.setFocusable(false);
         tblAddInvoice.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         tblAddInvoice.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        tblAddInvoice.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tblAddInvoiceActionPerformed(evt);
-            }
-        });
         jToolBar1.add(tblAddInvoice);
 
         btnEditInvoice.setText("Sửa hóa đơn");
@@ -83,11 +78,6 @@ public class pnlInvoice extends javax.swing.JPanel {
         jLabel1.setText("Hóa đơn");
 
         jButton4.setText("tìm kiếm");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mã hóa đơn", "Tháng", "Trạng thái", "Tên khách hàng" }));
 
@@ -124,14 +114,6 @@ public class pnlInvoice extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void tblAddInvoiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tblAddInvoiceActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tblAddInvoiceActionPerformed
 
     public JButton getBtnDeleteInvoice() {
         return btnDeleteInvoice;

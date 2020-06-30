@@ -147,7 +147,7 @@ public class pnlCustomerController extends BaseController {
     }
      private void btnDeleteCustomerClicked(MouseEvent evt) throws SQLException, ClassNotFoundException{
         int index =this.pnlCustomer.getTblCustomer().getSelectedRow();
-        
+         System.out.println(index);
         Object[] options = {"Có","Không"};
         int n = JOptionPane.showOptionDialog(pnlCustomer, 
                 "Bạn có muốn xóa hợp đồng với khách hàng " + this.customers.get(index).getCode()+ ": " + this.customers.get(index).getName(),

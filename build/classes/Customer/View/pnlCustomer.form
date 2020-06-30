@@ -118,7 +118,7 @@
                   <Data value="null"/>
                 </Column>
                 <Column editable="true" title="T&#xea;n kh&#xe1;ch h&#xe0;ng" type="java.lang.Object">
-                  <Data value="Tr&#x1ecb;nh Th&#x1ecb; Ng&#x1ecd;c &#xc1;nh"/>
+                  <Data value="Tr&#x1ecb;nh Th&#x1ecb; Ng&#x1ecd;c  &#xc1;nh"/>
                   <Data value="null"/>
                   <Data value="null"/>
                   <Data value="null"/>
@@ -220,7 +220,6 @@
                 <Column editable="true" title="Tr&#x1ea1;ng th&#xe1;i" type="java.lang.Object"/>
               </Table>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">

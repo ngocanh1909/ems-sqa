@@ -24,14 +24,18 @@ public class DBConnection {
 
     // Kết nối vào SQLServer.
     // (Sử dụng thư viện điều khiển SQLJDBC)
-    public static Connection getSQLServerConnection()
-            throws SQLException, ClassNotFoundException {
-        if (conn == null) {
-            return getSQLServerConnection(hostName, sqlInstanceName,
-                    database);
-        } else {
-            return conn;
+    public static Connection getSQLServerConnection() {
+        try {
+            if (conn == null) {
+                return getSQLServerConnection(hostName, sqlInstanceName,
+                        database);
+            } else {
+                return conn;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        return null;
     }
 
     // Trường hợp sử dụng SQLServer.
@@ -49,7 +53,7 @@ public class DBConnection {
             // Ví dụ:
             // jdbc:sqlserver://ServerIp:1433/SQLEXPRESS;databaseName=simplehr
             String connectionURL
-                    = "jdbc:sqlserver://" + hostName + ":1434"
+                    = "jdbc:sqlserver://" + hostName + ":1433"
                     + ";instance=" + sqlInstanceName + ";databaseName=" + database + ";integratedSecurity=true";
 
             conn = DriverManager.getConnection(connectionURL);
@@ -61,7 +65,7 @@ public class DBConnection {
     public static Connection getSQLServerConnection(String hostName,
             String sqlInstanceName, String database, String userName,
             String password) throws ClassNotFoundException, SQLException {
-        if(conn == null){
+        if (conn == null) {
             // Khai báo class Driver cho DB SQLServer
             // Việc này cần thiết với Java 5
             // Java6 tự động tìm kiếm Driver thích hợp.
@@ -71,7 +75,7 @@ public class DBConnection {
             // Cấu trúc URL Connection dành cho SQLServer
             // Ví dụ:
             // jdbc:sqlserver://ServerIp:1433/SQLEXPRESS;databaseName=simplehr
-            String connectionURL = "jdbc:sqlserver://" + hostName + ":3495"
+            String connectionURL = "jdbc:sqlserver://" + hostName + ":1433"
                     + ";instance=" + sqlInstanceName + ";databaseName=" + database;
             conn = DriverManager.getConnection(connectionURL, userName,
                     password);
